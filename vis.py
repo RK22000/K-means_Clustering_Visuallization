@@ -7,7 +7,8 @@ config = {
     "act_centers": 7,
     "num_centers": 7, # Don't exceed 8 cuz I only put in 8 colors
     "iters": 100,
-    "jitters": 1
+    "jitters": 1,
+    "save_file": None # Put file name if you wish to save as video
 }
 
 print(f"Using config {config}")
@@ -122,7 +123,8 @@ def update(frame_no):
 import matplotlib.animation as anim
 
 anime = anim.FuncAnimation(plt.gcf(), update, config['iters'], init_func=init)
-anime.save("k-means.mp4")
+if config['save_file']:
+    anime.save(config['save_file'])
     
 
 

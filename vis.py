@@ -3,9 +3,9 @@ import numpy as np
 
 config = {
     "seed": np.random.randint(100000),
-    # "seed": 34358,
-    "act_centers": 7,
-    "num_centers": 7, # Don't exceed 8 cuz I only put in 8 colors
+    # "seed": 91939,
+    "act_centers": 3,
+    "num_centers": 3, # Don't exceed 8 cuz I only put in 8 colors
     "iters": 100,
     "jitters": 1,
     "save_file": None # Put file name if you wish to save as video
@@ -25,7 +25,7 @@ np.random.seed(seed)
 width  = 100
 height = 100
 buffer = 10
-clusize = 20
+clusize = 10
 plt.xlim((0-buffer,width+buffer))
 plt.ylim((0-buffer,height+buffer))
 

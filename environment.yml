@@ -7,4 +7,5 @@ dependencies:
   - numpy
   - python=3.11
   - ipympl
+  - ffmpeg
 prefix: D:\Projects\K-means_Clustering_Visuallization\env-win

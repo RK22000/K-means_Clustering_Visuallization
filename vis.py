@@ -4,10 +4,10 @@ import numpy as np
 configuration = {
     "seed": np.random.randint(100000),
     # "seed": 34358,
-    "act_centers": 7,
-    "num_centers": 7, # Don't exceed 8 cuz I only put in 8 colors
+    "act_centers": 5,
+    "num_centers": 5, # Don't exceed 8 cuz I only put in 8 colors
     "iters": 100,
-    "jitters": 1,
+    "jitters": 2,
     "save_file": None # Put file name if you wish to save as video
 }
 
@@ -123,7 +123,7 @@ def run_visualization(config):
 
     import matplotlib.animation as anim
 
-    anime = anim.FuncAnimation(plt.gcf(), update, config['iters'], init_func=init)
+    anime = anim.FuncAnimation(plt.gcf(), update, config['iters'], init_func=init,)
     if config['save_file']:
         anime.save(config['save_file'])
         

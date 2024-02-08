@@ -1,4 +1,5 @@
-[![](badge_logo.svg)](https://mybinder.org/v2/gh/RK22000/K-means_Clustering_Visuallization/HEAD?labpath=vis.ipynb)
+[![Binder Launch Badge](badge_logo.svg)](https://mybinder.org/v2/gh/RK22000/K-means_Clustering_Visuallization/HEAD?labpath=vis.ipynb)
+
 # K-means
 
 An algorithm to discover clusters within data.

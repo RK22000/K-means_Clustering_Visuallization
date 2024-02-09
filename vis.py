@@ -6,13 +6,14 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 configuration = {
-    "seed": np.random.randint(100000),
-    # "seed": 34358,
-    "act_centers": 5,
-    "num_centers": 5, # Don't exceed 8 cuz I only put in 8 colors
+    # "seed": np.random.randint(100000), # Use this to randomly explore different scenarios
+    "seed": 73763, # Set a seed to replicate a scenario
+    "act_centers": 7,
+    "num_centers": 7, # Don't exceed 8 cuz I only put in 8 colors
     "iters": 100,
-    "jitters": 2,
+    "jitters": 1, # This is just a term I threw in to make things fun
     "save_file": None # Put file name if you wish to save as video
+    # "save_file": "Cool vid.mp4" # Supports mp4 gif and probably some other formats as well
 }
 
 def run_visualization(config):

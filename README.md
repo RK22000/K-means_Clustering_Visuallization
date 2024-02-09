@@ -9,3 +9,23 @@ I think I fell asleep in class when k-means was covered cuz I recently realized 
 Here's a an example run from the visualization.
 
 ![A visualization of the K-means algorithm](k-means.gif)
+
+## Environment file
+
+Created by command
+
+```sh
+conda env export --from-history -f environment.yml
+```
+
+Replicated by command
+
+```sh
+conda env create -p <Path to new environment location> -f environment.yml
+```
+
+or
+
+```sh
+conda env create -n <Name of new environment> -f environment.yml
+```

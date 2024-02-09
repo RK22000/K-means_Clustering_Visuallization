@@ -1,3 +1,7 @@
+"""
+This file can be run as is to open a window and run a visualization. 
+Or it could be imported in a notebook/script to be used as part of another work flow
+"""
 import matplotlib.pyplot as plt
 import numpy as np
 

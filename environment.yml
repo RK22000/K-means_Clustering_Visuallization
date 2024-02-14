@@ -1,11 +1,12 @@
-name: D:\Projects\K-means_Clustering_Visuallization\env-win
+name: d:\Projects\GraphTheoryAppliedToAIRobotics\env
 channels:
+  - conda-forge
   - defaults
 dependencies:
   - ipykernel
+  - ipympl
   - matplotlib
   - numpy
-  - python=3.11
-  - ipympl
+  - python
   - ffmpeg
-prefix: D:\Projects\K-means_Clustering_Visuallization\env-win
+prefix: d:\Projects\GraphTheoryAppliedToAIRobotics\env

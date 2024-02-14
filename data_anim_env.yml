@@ -1,0 +1,12 @@
+name: d:\Projects\GraphTheoryAppliedToAIRobotics\env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - ipykernel
+  - ipympl
+  - matplotlib
+  - numpy
+  - python
+  - ffmpeg
+prefix: d:\Projects\GraphTheoryAppliedToAIRobotics\env

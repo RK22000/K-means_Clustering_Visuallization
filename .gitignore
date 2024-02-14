@@ -2,3 +2,4 @@ env-linux/*
 __pycache__/*
 env-win/*
 .ipynb_checkpoints/*
+env/*

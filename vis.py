@@ -6,8 +6,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 configuration = {
-    # "seed": np.random.randint(100000), # Use this to randomly explore different scenarios
-    "seed": 73763, # Set a seed to replicate a scenario
+    "seed": np.random.randint(100000), # Use this to randomly explore different scenarios
+    # "seed": 73763, # Set a seed to replicate a scenario
     "act_centers": 7,
     "num_centers": 7, # Don't exceed 8 cuz I only put in 8 colors
     "iters": 100,
@@ -17,15 +17,15 @@ configuration = {
 }
 
 def run_visualization(config):
-
+    plt.cla()
 
     #========================
     # Satisfying seeds: 4619, 73312, 58126, 39231 | I forgot how many centers these seeds had
     #-----------------------
     # seed = 
-    seed = config['seed']
+    seed = config['seed']# if config['seed'] is not None else np.random.randint(100000)
 
-    np.random.seed(seed)
+    np.random.seed(seed) 
 
 
     width  = 100
@@ -140,11 +140,14 @@ def run_visualization(config):
     # plt.get_current_fig_manager().full_screen_toggle()
     # plt.show()
     return anime
+
+def show():
+    plt.show()
     
 if __name__ == '__main__':
     print(f"Using config {configuration}")
     anime = run_visualization(configuration)
-    plt.get_current_fig_manager().full_screen_toggle()
+    # plt.get_current_fig_manager().full_screen_toggle()
     plt.show()
 
 

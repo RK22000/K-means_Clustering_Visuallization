@@ -24,7 +24,7 @@ Replicated by command
 conda env create -p <Path to new environment location> -f environment.yml
 ```
 
-or
+or 
 
 ```sh
 conda env create -n <Name of new environment> -f environment.yml
